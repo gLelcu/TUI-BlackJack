@@ -139,7 +139,7 @@ void dealplayer(WINDOW *win, int &y){
 }
 
 int endgame(WINDOW *win, int &x, int &y){
-    mvprintw(9, 63, "DEAL AGAIN? [y/n]");
+    mvprintw(10, 63, "DEAL AGAIN? [y/n]");
         refresh();
         wrefresh(win);
          char again = wgetch(win);
@@ -151,7 +151,7 @@ int endgame(WINDOW *win, int &x, int &y){
             buildWindow(win);
             first2cardsdealer(win);
             first2cardsplayer(win);
-            mvprintw(9, 63, "ANOTHER ONE!     "); 
+            mvprintw(10, 63, "ANOTHER ONE!     "); 
             refresh();
             wrefresh(win);
             x = 12;
