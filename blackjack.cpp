@@ -28,12 +28,12 @@ void buildWindow(WINDOW *win)
 
     //scriem inafara cutii
     mvprintw(1, 63, "Dealer stays on 17 and hits on 16");
-    mvprintw(2, 63, "How to play:");
-    mvprintw(3, 63, "h - hit");
-    mvprintw(4, 63, "s - stay");
-    mvprintw(5, 63, "d - double");
-    mvprintw(6, 63, "p - split");
-    mvprintw(7, 63, "q - quit");
+    mvprintw(3, 63, "How to play:");
+    mvprintw(4, 63, "h - hit");
+    mvprintw(5, 63, "s - stay");
+    mvprintw(6, 63, "d - double");
+    mvprintw(7, 63, "p - split");
+    mvprintw(8, 63, "q - quit");
 
     refresh();
     wrefresh(win); // refresh sa vedem cutia  
@@ -139,7 +139,7 @@ void dealplayer(WINDOW *win, int &y){
 }
 
 int endgame(WINDOW *win, int &x, int &y){
-    mvprintw(8, 63, "DEAL AGAIN? [y/n]");
+    mvprintw(9, 63, "DEAL AGAIN? [y/n]");
         refresh();
         wrefresh(win);
          char again = wgetch(win);
@@ -151,7 +151,7 @@ int endgame(WINDOW *win, int &x, int &y){
             buildWindow(win);
             first2cardsdealer(win);
             first2cardsplayer(win);
-            mvprintw(8, 63, "ANOTHER ONE!     "); 
+            mvprintw(9, 63, "ANOTHER ONE!     "); 
             refresh();
             wrefresh(win);
             x = 12;
@@ -159,7 +159,7 @@ int endgame(WINDOW *win, int &x, int &y){
             return 1;
          }
          else if (again == 'n') {
-            mvprintw(8, 63, "press any key to exit :(("); 
+            mvprintw(9, 63, "press any key to exit :(("); 
             refresh();
             wrefresh(win);
             return 0;
