@@ -25,12 +25,12 @@ BlackJack or 21 cards game with text user interface to be played in the terminal
  **On Android** 
  - install Termux from the play store  git clone it like before and inside paste:
  - `pkg update && pkg upgrade && pkg install clang`
- -  ` clang++ blackjack.cpp -o blackjack && ./blackjack`
+ -  ` clang++ blackjack.cpp -o blackjack -lncurses && ./blackjack`
 
 ----------------------------------------------------
 
 I am still working on the game so there is no *double down* or *split* and the UI may bug rarely.
 
-Besides *double down* and *split* i want to add side bets like *crazy seven*, *21 + 3* and *bust* also a cash system maybe with a json so it the player wont loose the cash and improve the ACE score by calculating it recursively.
+Besides *double down* and *split* i want to add side bets like *crazy seven*, *21 + 3* and *bust* also a cash system maybe with a json so the player wont loose the cash and improve the ACE score by calculating it recursively.
 
 
