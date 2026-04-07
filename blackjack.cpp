@@ -151,7 +151,7 @@ int endgame(WINDOW *win, int &x, int &y){
             buildWindow(win);
             first2cardsdealer(win);
             first2cardsplayer(win);
-            mvwprintw(win, 8, 63, "ANOTHER ONE!"); 
+            mvprintw(win, 8, 63, "ANOTHER ONE!"); 
             refresh();
             wrefresh(win);
             x = 12;
