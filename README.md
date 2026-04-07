@@ -4,7 +4,6 @@ BlackJack or 21 cards game with text user interface to be played in the terminal
 
 ---------------------------------------------------------------------------------------
 <img src="img.png">
----------------------------------------------------------------------------------------
 
 ## Dependences
  - `lncurses` c/c++ library
