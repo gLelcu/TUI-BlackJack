@@ -25,7 +25,7 @@ BlackJack or 21 cards game with text user interface to be played in the terminal
  **On Android** 
  - install Termux from the play store and inside paste:
  - `pkg update && pkg upgrade && pkg install clang`
- -  ` clang++ main.cpp -o program && ./program`
+ -  ` clang++ blackjack.cpp -o blackjack && ./blackjack`
 
 ----------------------------------------------------
 
