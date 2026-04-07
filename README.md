@@ -1,6 +1,7 @@
 ## TUI-INFINITE-BlackJack ♠️♥️
 
 BlackJack or 21 cards game with text user interface to be played in the terminal, made completly in c++ with thee `ncurses` library.
+
 ---------------------------------------------------------------------------------------
 <img src="img.png">
 ---------------------------------------------------------------------------------------
