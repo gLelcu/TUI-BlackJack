@@ -69,6 +69,9 @@ void first2cardsdealer(WINDOW *win){ //primele 2 carti si calculam scorul
             else score.dealer += 11;
     else
         score.dealer += (rank >= 9) ? 10 : rank + 1;
+
+    mvprintw(13, 63, "Dealer scores %d  ", score.dealer);
+
     refresh();
     wrefresh(win);
 }
@@ -92,6 +95,15 @@ void first2cardsplayer(WINDOW *win){ // facem acelasi lucru
             else   score.player += 11;
     else
         score.player += (rank >= 9) ? 10 : rank + 1;
+    if(score.player == 21){
+            wattron(win, COLOR_PAIR(1));
+            mvwprintw(win, 0, 20, "  BLACKJACK    ");
+            wattroff(win, COLOR_PAIR(1));
+    }
+
+    mvprintw(15, 63, "Player scores %d  ", score.player);
+
+
     refresh();
     wrefresh(win);
 }
@@ -122,6 +134,8 @@ void dealdealer(WINDOW *win, int &x){
         refresh();
         wrefresh(win);
         dealdealer(win, x);
+
+        mvprintw(13, 63, "Dealer scores %d  ", score.dealer);
     }
 }
 void dealplayer(WINDOW *win, int &y){
@@ -134,6 +148,14 @@ void dealplayer(WINDOW *win, int &y){
             else   score.player += 11;
     else
         score.player += (rank >= 9) ? 10 : rank + 1;
+
+    if(score.player == 21){
+            wattron(win, COLOR_PAIR(1));
+            mvwprintw(win, 0, 20, "  BLACKJACK    ");
+            wattroff(win, COLOR_PAIR(1));
+    }
+     mvprintw(15, 63, "Player scores %d  ", score.player);
+
     refresh();
     wrefresh(win);
 }
