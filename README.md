@@ -30,6 +30,7 @@ BlackJack or 21 cards game with text user interface to be played in the terminal
 ----------------------------------------------------
 
 **On microslop windows**
+
 -just use `git bash` or `mingw`
 - try with `wget` but who knows how you will compile iit
 - or copy the sorce codee in vscode idk
