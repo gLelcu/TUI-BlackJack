@@ -34,6 +34,16 @@ BlackJack or 21 cards game with text user interface to be played in the terminal
 -just use `git bash` or `mingw`
 - try with `wget` but who knows how you will compile iit
 - or copy the source code in vscode idk
+- Install MSYS2.
+- open MSYS2 MinGW x64 terminal.
+- run:
+   - pacman -Syu
+   - pacman -S --needed mingw-w64-x86_64-gcc mingw-w64-x86_64-ncurses
+ - in your repo folder:
+   - g++ blackjack.cpp -o blackjack.exe -lncurses
+   - ./blackjack.exe
+
+- alternative: WSL (Ubuntu) + same Linux instructions.
 
 ---------------------------------------------------
 
