@@ -29,6 +29,13 @@ BlackJack or 21 cards game with text user interface to be played in the terminal
 
 ----------------------------------------------------
 
+**On microslop windows**
+-just use `git bash` or `mingw`
+- try with `wget` but who knows how you will compile iit
+- or copy the sorce codee in vscode idk
+
+---------------------------------------------------
+
 I am still working on the game so there is no *double down* or *split* and the UI may bug rarely.
 
 Besides *double down* and *split* i want to add side bets like *crazy seven*, *21 + 3* and *bust* also a cash system maybe with a json so the player wont loose the cash and improve the ACE score by calculating it recursively.
