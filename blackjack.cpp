@@ -7,12 +7,12 @@
 #include <string.h>
 
 using namespace std;
-
+/// "infinite card dealing pack"
 struct {
     char suit[4] = {'H', 'D', 'C', 'S'};
     char rank[14] = {'A', '2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K',};
 }card;
-
+/// make a fork with a single pack with an implementation of Fisher-Yates O(nlogn) version
 struct {
     int dealer = 0;
     int player = 0;
