@@ -7,19 +7,14 @@ BlackJack or 21 cards game with text user interface to be played in the terminal
 
 ## Dependences
  - `lncurses` c/c++ library
- -  compiler suited for c++ (I reccomend g++)
- -  to be openned in terminal
+ -  compiler suited for c++
 
 ## How to play
 **On linux/macOS**  
  - `git clone` the repo or install the zip
  - compile the `.cpp` file ( `g++ blackjack.cpp -o blackjack -lncurses ` )
  - `./blackjack`
- -  h - hit
- -  s - stay
- -  q - quit
- -  y/n for another hand 
- 
+ - 
 -------------------------------------------
 
  **On Android** 
@@ -30,11 +25,9 @@ BlackJack or 21 cards game with text user interface to be played in the terminal
 ----------------------------------------------------
 
 **On microslop windows**
-
 -just use `git bash` or `mingw`
-- try with `wget` but who knows how you will compile iit
 - or copy the source code in vscode idk
-- Install MSYS2.
+- install MSYS2.
 - open MSYS2 MinGW x64 terminal.
 - run:
    - pacman -Syu
@@ -46,6 +39,9 @@ BlackJack or 21 cards game with text user interface to be played in the terminal
 - alternative: WSL (Ubuntu) + same Linux instructions.
 
 ---------------------------------------------------
+
+ **In browser**
+ you can use a good browser based terminal to play it, i reccomend github codespaces (replit or google idx were ok, but now it s just ai slop)
 
 I am still working on the game so there is no *double down* or *split* and the UI may bug rarely.
 
