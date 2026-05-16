@@ -25,6 +25,7 @@ BlackJack or 21 cards game with text user interface to be played in the terminal
 ----------------------------------------------------
 
 **On microslop windows**
+
 -just use `git bash` or `mingw`
 - or copy the source code in vscode idk
 - install MSYS2.
@@ -42,6 +43,8 @@ BlackJack or 21 cards game with text user interface to be played in the terminal
 
  **In browser**
  you can use a good browser based terminal to play it, i reccomend github codespaces (replit or google idx were ok, but now it s just ai slop)
+
+--------------------------------------------------------
 
 I am still working on the game so there is no *double down* or *split* and the UI may bug rarely.
 
